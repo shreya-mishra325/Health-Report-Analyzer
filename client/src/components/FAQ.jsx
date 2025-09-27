@@ -37,9 +37,9 @@ const FAQ = () => {
 
   return (
     <section className="faq-container">
-      <h2><center>Frequently Asked Questions</center></h2>
+      <h2 data-aos="fade-up" data-aos-duration="740"><center>Frequently Asked Questions</center></h2>
       {faqEntries.map((item, idx) => (
-        <div
+        <div data-aos="fade-right" data-aos-duration="740"
           key={idx}
           className={`faq-item ${openIndex === idx ? "open" : ""}`}
           onClick={() => toggle(idx)}

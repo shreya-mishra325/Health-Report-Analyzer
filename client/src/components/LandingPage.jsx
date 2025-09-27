@@ -36,7 +36,7 @@ export default function LandingPage({ user, setUser }) {
     <div className="landing-container">
       {/* Header */}
       <header className="landing-header">
-        <div className="landing-header-content">
+        <div  data-aos="fade-up" className="landing-header-content">
           <div className="landing-logo">
             <FileText className="landing-logo-icon" />
             <h1 className="landing-logo-text">Health Report Analyzer</h1>
@@ -62,16 +62,16 @@ export default function LandingPage({ user, setUser }) {
       {/* Hero Section */}
       <section className="landing-hero-section">
         <div className="landing-hero-content">
-          <h1 className="landing-hero-title">
+          <h1 data-aos="fade-up" className="landing-hero-title">
             Analyze Your Health Reports
-            <span className="landing-hero-subtitle">with Advanced Technology</span>
+            <span  data-aos="fade-up" className="landing-hero-subtitle">with Advanced Technology</span>
           </h1>
-          <p className="landing-hero-description">
+          <p data-aos="fade-up" className="landing-hero-description">
             Upload your medical reports and get instant, comprehensive analysis with personalized insights. Our advanced
             technology helps you understand your health data like never before.
           </p>
           <div className="landing-hero-button-container">
-            <button className="landing-primary-button" onClick={handleGetStartedClick}>
+            <button  data-aos="fade-up" className="landing-primary-button" onClick={handleGetStartedClick}>
               {user ? "Return to Dashboard" : "Get Started Free"}
             </button>
           </div>
@@ -80,70 +80,70 @@ export default function LandingPage({ user, setUser }) {
 
       {/* Features Section */}
       <section className="landing-features-section">
-        <div className="landing-section-header">
-          <h2 className="landing-section-title">Why Choose Health Report Analyzer?</h2>
-          <p className="landing-section-description">
+        <div data-aos="fade-up" aos-duration="740" className="landing-section-header">
+          <h2 className="landing-section-title" data-aos="fade-up">Why Choose Health Report Analyzer?</h2>
+          <p  data-aos="fade-up" aos-duration="740" className="landing-section-description">
             Transform complex medical data into clear, actionable insights with our cutting-edge platform
           </p>
         </div>
 
         <div className="landing-features-grid">
-          <div className="landing-feature-card">
+          <div data-aos="fade-up" aos-duration="740" className="landing-feature-card">
             <div className="landing-feature-header">
               <div className="landing-feature-icon landing-zap">
                 <Zap className="landing-icon landing-zap" />
               </div>
-              <h3 className="landing-feature-title">Instant Analysis</h3>
+              <h3  data-aos="fade-up" className="landing-feature-title">Instant Analysis</h3>
             </div>
-            <p className="landing-feature-description">
+            <p data-aos="fade-up" aos-duration="740" className="landing-feature-description">
               Get comprehensive analysis of your health reports in seconds using advanced OCR technology.
             </p>
           </div>
 
-          <div className="landing-feature-card">
+          <div data-aos="fade-up" aos-duration="740" className="landing-feature-card">
             <div className="landing-feature-header">
               <div className="landing-feature-icon landing-shield">
                 <Shield className="landing-icon landing-shield" />
               </div>
-              <h3 className="landing-feature-title">Secure & Private</h3>
+              <h3 data-aos="fade-up" className="landing-feature-title">Secure & Private</h3>
             </div>
-            <p className="landing-feature-description">
+            <p data-aos="fade-up" aos-duration="740" className="landing-feature-description">
               Your health data is encrypted and protected with enterprise-grade security. We never store your reports.
             </p>
           </div>
 
-          <div className="landing-feature-card">
+          <div data-aos="fade-up" aos-duration="740" className="landing-feature-card">
             <div className="landing-feature-header">
               <div className="landing-feature-icon landing-trending-up">
                 <TrendingUp className="landing-icon landing-trending-up" />
               </div>
-              <h3 className="landing-feature-title">Trend Tracking</h3>
+              <h3 data-aos="fade-up" className="landing-feature-title">Trend Tracking</h3>
             </div>
-            <p className="landing-feature-description">
+            <p data-aos="fade-up" aos-duration="740" className="landing-feature-description">
               Monitor your health metrics over time and identify important trends in your medical data.
             </p>
           </div>
 
-          <div className="landing-feature-card">
+          <div data-aos="fade-up" aos-duration="740" className="landing-feature-card">
             <div className="landing-feature-header">
               <div className="landing-feature-icon landing-file-text">
                 <FileText className="landing-icon landing-file-text" />
               </div>
-              <h3 className="landing-feature-title">Multiple Formats</h3>
+              <h3 data-aos="fade-up" className="landing-feature-title">Multiple Formats</h3>
             </div>
-            <p className="landing-feature-description">
+            <p data-aos="fade-up" aos-duration="740" className="landing-feature-description">
               Support for various report formats including PNG, JPEG, JPG images and scanned documents.
             </p>
           </div>
 
-          <div className="landing-feature-card">
+          <div data-aos="fade-up" aos-duration="740" className="landing-feature-card">
             <div className="landing-feature-header">
               <div className="landing-feature-icon landing-clock">
                 <Clock className="landing-icon landing-clock" />
               </div>
-              <h3 className="landing-feature-title">24/7 Available</h3>
+              <h3 data-aos="fade-up" className="landing-feature-title">24/7 Available</h3>
             </div>
-            <p className="landing-feature-description">
+            <p data-aos="fade-up" aos-duration="740" className="landing-feature-description">
               Access your health insights anytime, anywhere with our cloud-based platform.
             </p>
           </div>
@@ -153,17 +153,17 @@ export default function LandingPage({ user, setUser }) {
       {/* How It Works Section */}
       <section className="landing-how-it-works-section">
         <div className="landing-section-header">
-          <h2 className="landing-section-title">How It Works</h2>
-          <p className="landing-section-description">Get insights from your health reports in three simple steps</p>
+          <h2 data-aos="fade-up" className="landing-section-title">How It Works</h2>
+          <p data-aos="fade-up" data-aos-duration="790" className="landing-section-description">Get insights from your health reports in three simple steps</p>
         </div>
 
-        <div className="landing-steps-grid">
+        <div data-aos="fade-up" aos-duration="740" className="landing-steps-grid">
           <div className="landing-step">
             <div className="landing-step-number">
               <span className="landing-step-number-text">1</span>
             </div>
             <h3 className="landing-step-title">Upload Report</h3>
-            <p className="landing-step-description">
+            <p data-aos="fade-up" data-aos-duration="740" className="landing-step-description">
               Simply drag and drop your health report or take a photo with your device
             </p>
           </div>
@@ -173,7 +173,7 @@ export default function LandingPage({ user, setUser }) {
               <span className="landing-step-number-text">2</span>
             </div>
             <h3 className="landing-step-title">Smart Analysis</h3>
-            <p className="landing-step-description">
+            <p data-aos="fade-up" data-aos-duration="740" className="landing-step-description">
               Our advanced technology processes and analyzes your report data in real-time
             </p>
           </div>
@@ -183,7 +183,7 @@ export default function LandingPage({ user, setUser }) {
               <span className="landing-step-number-text">3</span>
             </div>
             <h3 className="landing-step-title">Get Insights</h3>
-            <p className="landing-step-description">Receive detailed analysis with explanations and recommendations</p>
+            <p data-aos="fade-up" data-aos-duration="740" className="landing-step-description">Receive detailed analysis with explanations and recommendations</p>
           </div>
         </div>
       </section>
@@ -193,12 +193,12 @@ export default function LandingPage({ user, setUser }) {
       {/* CTA Section */}
       <section className="landing-cta-section">
         <div className="landing-cta-card">
-          <h2 className="landing-cta-title">Ready to Understand Your Health Better?</h2>
-          <p className="landing-cta-description">
+          <h2 data-aos="fade-up" data-aos-duration="740" className="landing-cta-title">Ready to Understand Your Health Better?</h2>
+          <p data-aos="fade-up" data-aos-duration="740" className="landing-cta-description">
             Join thousands of users who trust Health Report Analyzer for their medical insights. Start your journey to
             better health understanding today.
           </p>
-          <div className="landing-cta-button-container">
+          <div data-aos="fade-up" data-aos-duration="740" className="landing-cta-button-container">
             <button className="landing-primary-button" onClick={handleGetStartedClick}>
               {user ? "Continue to Dashboard" : "Start Free Analysis"}
             </button>
