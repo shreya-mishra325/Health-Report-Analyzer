@@ -16,7 +16,7 @@ app.timeout = 300000;
 const corsOptions = {
   origin: process.env.NODE_ENV === 'production' 
     ? ['https://health-report-analyzer.vercel.app', 'https://health-report-analyzer.onrender.com']
-    : ['http://localhost:3000'],
+    : ['http://localhost:3000', 'http://localhost:5173'],
   credentials: true
 };
 
@@ -31,7 +31,19 @@ app.use('/api/reports', require('./routes/reports'));
 
 // Health check endpoint
 app.get('/api/health', (req, res) => {
-  res.json({ message: 'Health Report Analyzer API is running!' });
+  const mongoose = require('mongoose');
+  const dbConnected = mongoose.connection.readyState === 1;
+  
+  res.json({ 
+    message: 'Health Report Analyzer API is running!',
+    database: dbConnected ? 'Connected' : 'Disconnected',
+    features: {
+      fileUpload: true,
+      ocr: true,
+      authentication: dbConnected,
+      reportSaving: dbConnected
+    }
+  });
 });
 
 app.listen(PORT, () => {
